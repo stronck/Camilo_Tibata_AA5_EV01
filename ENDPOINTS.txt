@@ -1,0 +1,40 @@
+ENDPOINTS — GA7-220501096-AA5-EV01
+
+Base URL:
+http://localhost/Camilo_Tibata_AA5_EV01
+
+Registro
+POST /pages/register.php
+Body:
+{
+  "name": "Nelson",
+  "last_name": "García",
+  "user": "alexx0137",
+  "password": "123456"
+}
+
+Login exitoso
+POST /pages/login.php
+Body:
+{
+  "user": "alexx0137",
+  "password": "123456"
+}
+
+Login con error
+POST /pages/login.php
+Body:
+{
+  "user": "alexx0137",
+  "password": "1256"
+}
+
+Consulta de sesión
+GET /pages/home.php
+Requiere conservar la cookie de sesión.
+
+Cerrar sesión
+POST /pages/logout.php
+
+Prueba del servicio
+GET /pages/test.php
